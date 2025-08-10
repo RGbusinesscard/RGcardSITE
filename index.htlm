@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RG.card — Cartes de visite NFC haut de gamme</title>
+  <meta name="description" content="RG.card : cartes de visite NFC premium. Paiement unique, pas d’abonnement. Programmation incluse, plaques NFC, packs B2B." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter + Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg animated" aria-hidden="true"></div>
 
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Accueil RG.card">
+        <!-- Logo vector minimal (remplaçable par assets/logo.svg) -->
+        <svg width="132" height="28" viewBox="0 0 132 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="20" font-family="Poppins, Inter, system-ui" font-weight="700" font-size="20" fill="white">RG.card</text>
+        </svg>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Ouvrir le menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#how">Fonctionnement</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#b2b">Pro / B2B</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn btn-ghost" aria-pressed="false" aria-label="Changer d’arrière-plan animé ou uni">
+          Fond animé
+        </button>
+        <a class="btn btn-primary" href="#contact">Commander</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner: no subscription -->
+  <section class="banner" role="status" aria-live="polite">
+    <div class="container">
+      <p class="banner-text">⚠️ <strong>Aucun abonnement — Paiement unique.</strong> Vous achetez la carte, nous faisons le site et la programmation. <strong>Pas de frais cachés.</strong></p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-text reveal">
+          <h1 class="title">PAS D’APPLI. PAS DE STRESS. <span class="thin">IL SUFFIT DE PASSER.</span></h1>
+          <p class="lead">La carte de visite NFC qui partage vos informations en un geste.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Commander</a>
+            <a class="btn btn-outline" href="#how">Voir comment ça marche</a>
+          </div>
+          <ul class="badges" aria-label="Avantages produits">
+            <li class="badge">💧 Résistante eau / chaleur</li>
+            <li class="badge">⚡ ~0,1 Wh / scan</li>
+            <li class="badge">📱 Sans application</li>
+            <li class="badge">🎁 Échantillons gratuits</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <!-- Remplace l'image par assets/mockup.png si tu en as une -->
+          <div class="card-mock glass">
+            <div class="chip"></div>
+            <div class="logo">RG.card</div>
+            <div class="stripe"></div>
+            <div class="hint">NFC</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Comment ça marche</h2>
+        <div class="cards-3">
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <h3>Programmation incluse</h3>
+            <p>Nous configurons votre carte selon vos besoins : site, réseaux, fiche Google, formulaire, menu… prêt à l’emploi.</p>
+          </article>
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">📲</div>
+            <h3>Tap & partage</h3>
+            <p>Approchez la carte d’un smartphone compatible NFC : vos informations s’ouvrent instantanément, sans application.</p>
+          </article>
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">🛡️</div>
+            <h3>Robuste & durable</h3>
+            <p>Matériaux résistants à l’eau, au froid et à la chaleur. Consommation directe au scan &lt; 4 cm, sans batterie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Nos produits</h2>
+
+        <div class="product-grid">
+          <article class="product-card glass reveal">
+            <img src="assets/carte-pvc.png" alt="Carte de visite NFC en PVC, finition premium" loading="lazy">
+            <div class="product-body">
+              <h3>Carte PVC</h3>
+              <p>Carte NFC au format bancaire, finition mate/soft-touch. Personnalisation et programmation incluses.</p>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal">
+            <img src="assets/sticker-nfc.png" alt="Sticker NFC discret pour surfaces variées" loading="lazy">
+            <div class="product-body">
+              <h3>Stickers NFC</h3>
+              <p>Pastilles discrètes à coller partout : vitrines, emballages, cartes existantes — redirigent vers le lien de votre choix.</p>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal">
+            <img src="assets/plaque-nfc.png" alt="Plaque NFC personnalisée pour comptoir" loading="lazy">
+            <div class="product-body">
+              <h3>Plaques NFC</h3>
+              <p>Plaques élégantes à poser sur comptoir/bureau : parfait pour menus, avis Google, formulaires, réservations.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B -->
+    <section id="b2b" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Pro / B2B</h2>
+        <div class="b2b glass reveal">
+          <p>
+            <strong>Agences, web designers, revendeurs :</strong> intégrez RG.card en marque blanche, tarifs dégressifs, visuels fournis, configuration “clé en main”.
+            Devenez partenaire et offrez une expérience moderne à vos clients — sans abonnement.
+          </p>
+          <a class="btn btn-outline" href="#contact">Demander une offre partenaire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Tarifs clairs</h2>
+
+        <div class="notice glass reveal">
+          <p>⚠️ <strong>Pas d’abonnement</strong> — paiement unique, programmation incluse.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card glass reveal">
+            <h3>Carte NFC</h3>
+            <p class="price">20 € <span class="vat">TTC</span></p>
+            <ul class="features">
+              <li>Programmation incluse</li>
+              <li>Personnalisation visuelle</li>
+              <li>Support rapide</li>
+            </ul>
+          </article>
+
+          <article class="price-card glass reveal">
+            <h3>Carte NFC + impression laser</h3>
+            <p class="price">30 € <span class="vat">TTC</span></p>
+            <ul class="features">
+              <li>Gravure fine & durable</li>
+              <li>Programmation incluse</li>
+              <li>Finition premium</li>
+            </ul>
+          </article>
+
+          <article class="price-card glass reveal">
+            <h3>Plaque NFC personnalisée</h3>
+            <p class="price">35 € <span class="vat">TTC</span></p>
+            <ul class="features">
+              <li>À poser sur comptoir</li>
+              <li>Personnalisation complète</li>
+              <li>Idéal menus / avis</li>
+            </ul>
+          </article>
+
+          <article class="price-card glass highlight reveal">
+            <h3>Packs & revente</h3>
+            <p class="price">Sur devis</p>
+            <ul class="features">
+              <li>Tarifs dégressifs</li>
+              <li>Marque blanche</li>
+              <li>Ressources marketing</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Demander un devis</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">FAQ</h2>
+        <details class="faq-item glass reveal">
+          <summary>Les cartes fonctionnent-elles sans application ?</summary>
+          <p>Oui. Approchez la carte (≤ 4 cm) d’un smartphone compatible NFC et la page souhaitée s’ouvre immédiatement.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Que puis-je lier avec ma carte ?</summary>
+          <p>Site web, réseaux sociaux, fiche Google, menu, PDF, formulaire, carte de contact vCard, etc.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Proposez-vous des échantillons ?</summary>
+          <p>Oui, des échantillons peuvent être fournis gratuitement aux partenaires pro/B2B.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Y a-t-il des frais récurrents ?</summary>
+          <p>Non. Paiement unique, pas d’abonnement, pas de frais cachés.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <ul class="contact-list">
+              <li>📞 <a href="tel:+33764021268" class="link">07 64 02 12 68</a></li>
+              <li>✉️ <a href="mailto:rg.businesscard@gmail.com" class="link">rg.businesscard@gmail.com</a></li>
+              <li>📸 <a href="https://www.instagram.com/rg.card?igsh=MTRocjZ6aTFvYmQ0bQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="link">Instagram @rg.card</a></li>
+            </ul>
+            <p class="small">Basé à Tours — <em>l’avenir peut commencer ici.</em></p>
+          </div>
+
+          <form id="contactForm" class="contact-form glass reveal" novalidate>
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Votre nom" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.com" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre besoin, quantité, délais…"></textarea>
+
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> RG.card — Tous droits réservés.</p>
+      <a class="link" href="#hero">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
